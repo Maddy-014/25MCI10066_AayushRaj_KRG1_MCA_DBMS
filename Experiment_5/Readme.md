@@ -61,7 +61,7 @@ INSERT INTO Employee (emp_name, salary, experience, performance_score) VALUES
 ```
 
 ### Output
-![](images/2.png)
+![](images/1.png)
 
 ---
 
@@ -93,7 +93,7 @@ END $$;
 ```
 
 ### Output
-![](images/1.png)
+![](images/2.png)
 
 ---
 
