@@ -27,8 +27,8 @@ View Management: To understand the syntax for creating, altering, and dropping v
 # Practical / Experiment Steps
 
 ---
-🔹 Step 1: Creating a Simple View for Data Filtering
-#Implementing a view to provide a quick list of active employees without exposing the entire table structure.
+# 🔹 Step 1: Creating a Simple View for Data Filtering
+Implementing a view to provide a quick list of active employees without exposing the entire table structure.
 
 ```sql
 CREATE TABLE Employee (
@@ -40,7 +40,7 @@ CREATE TABLE Employee (
 );
 ```
 
-#Data Insertion
+# Data Insertion
 
 ```sql
 INSERT INTO Employee (emp_name, department, salary, is_active) VALUES
@@ -56,12 +56,12 @@ WHERE is_active = TRUE;
 
 SELECT * FROM active_employees;
 ```
-#Output :-
+# Output :-
 
 <img width="975" height="301" alt="555811573-c159787a-5328-4517-8c01-b700df35b1ef" src="https://github.com/user-attachments/assets/15a92e17-73a0-46e4-9d76-9b000723b27f" />
 
-🔹 Step 2: Creating a View for Joining Multiple Tables
-#Simplifying the retrieval of data distributed across Employees and Departments tables.
+# 🔹 Step 2: Creating a View for Joining Multiple Tables
+Simplifying the retrieval of data distributed across Employees and Departments tables.
 
 ```sql
 CREATE TABLE Departments (
@@ -97,12 +97,12 @@ ON e.dept_id = d.dept_id;
 
 SELECT * FROM employee_department_view;
 ```
-#Output :-
+# Output :-
 
 <img width="729" height="289" alt="555812325-21e478ee-1513-4513-844c-3f2fa36fdf28" src="https://github.com/user-attachments/assets/efede546-6561-47e0-8af4-72e1268f4804" />
 
-🔹 Step 3: Advanced Summarization View
-#Creating a view to provide department-level statistics automatically.
+# 🔹 Step 3: Advanced Summarization View
+Creating a view to provide department-level statistics automatically.
 
 ```sql
 Query
@@ -120,12 +120,12 @@ ON d.dept_id = e.dept_id
 GROUP BY d.dept_name;
 ```
 
-#Output :-
+# Output :-
 
 <img width="975" height="235" alt="555812471-9f75c9df-394a-4019-9762-a374e296779c" src="https://github.com/user-attachments/assets/96860ee6-f515-4fc8-ad8d-af6237676db3" />
 
 📚 LEARNING OUTCOMES
-Abstraction Proficiency: Students will be able to create and query views to simplify efficient data access and abstraction.
-Security Implementation: Students will understand how to use views for data masking and providing restricted access to sensitive information.
-Syntactic Accuracy: Students will demonstrate the correct syntax for creating and querying views, ensuring logical clarity in naming conventions.
-Real-world Application: Students will be able to design views for practical domains like Library Management Systems or Payroll Systems to demonstrate functionality.
+- Abstraction Proficiency: Students will be able to create and query views to simplify efficient data access and abstraction.
+- Security Implementation: Students will understand how to use views for data masking and providing restricted access to sensitive information.
+- Syntactic Accuracy: Students will demonstrate the correct syntax for creating and querying views, ensuring logical clarity in naming conventions.
+- Real-world Application: Students will be able to design views for practical domains like Library Management Systems or Payroll Systems to demonstrate functionality.
